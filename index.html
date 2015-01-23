@@ -3,8 +3,10 @@
 	<head>
 		<title>DuckOS</title>
 		<link rel = "stylesheet" type = "text/css" href = "css/bootstrap.min.css">
+		<link rel = "stylesheet" type = "text/css" href = "css/styles.css">
 	</head>
 	<body>
+		<script src = "os/keyboard.js"></script>
 		<script src = "os/boot.js"></script>
 		<script src = "os/main.js"></script>
 		<script src = "os/home.js"></script>
@@ -13,9 +15,9 @@
 		
 		<div id = "dash">
 			<ul>
-				<li class = "home-btn btn"><a href = "index.html">Home</a></li>
-				<li class = "apps"><a href = "apps.html">Apps</a></li>
-				<li><span class = "spacer"></span></li>
+				<li class = "btn btn-primary"><a href = "index.html">Home</a></li>
+				<li class = "btn btn-primary"><a href = "apps.html">Apps</a></li>
+				<li class = "btn btn-warning" onclick = "goBack()">Back<li>
 			</ul>
 		</div>
 	<body>
