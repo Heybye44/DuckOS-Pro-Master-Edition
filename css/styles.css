@@ -1,10 +1,15 @@
-#dash{
+.dash{
 	position: fixed;
 	top: 90%;
 	left: 100%;
 	background-color: #CBF7FF;
 	width: 30%;
 	height: 40%;
+}
+
+.titleword{
+margin-right: 20px;
+margin-top: 20px;
 }
 
 body{
