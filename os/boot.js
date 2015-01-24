@@ -1,4 +1,4 @@
-var boot = function() (
+var boot = function() {
 	console.info("Boot Started!");
 	main();
 }
