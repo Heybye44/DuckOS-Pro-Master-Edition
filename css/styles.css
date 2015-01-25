@@ -9,7 +9,7 @@
 
 .titleword{
 	color: #eeeeee;
-	margin-left: 20px;
+	margin-left: 25px;
 }
 
 body{
@@ -17,12 +17,6 @@ body{
 	background-repeat: no-repeat;
 }
 
-
-iframes{
-	width: 100%;
-	height: 100%;
-	seamless: true;
-}
 
 .app{
 	background:rgba(0,0,0,0.75);
@@ -32,4 +26,5 @@ iframes{
 	-moz-box-shadow: 0 0 15px 1px #000000;
 	-webkit-box-shadow: 0 0 15px 1px #000000;
 	height: 100%;
+	width: 100%;
 }
