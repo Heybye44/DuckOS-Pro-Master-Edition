@@ -3,6 +3,4 @@ var boot = function() {
 	main();
 }
 
-var bios = function() {
-	boot();
-}
+boot();
