@@ -1,6 +1,6 @@
 var boot = function() {
 	console.info("Boot Started!");
-	if(localStorage.getItem("firstboot") == "true"){
+	if(localStorage.getItem("firstboot") == "true"|| localStorage == null){
 		console.log("setup needed");
 		setup();
 		return 0;
