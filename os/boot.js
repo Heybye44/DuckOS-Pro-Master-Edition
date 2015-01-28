@@ -1,6 +1,30 @@
 var boot = function() {
 	console.info("Boot Started!");
-	main();
+	if(localStorage.getItem("firstboot") == "true"){
+		console.log("setup needed");
+		setup();
+		return 0;
+	}else{
+		 document.getElementById("namecard").innerHTML = "Welcome, " + name;
+	}
+	 
 }
 
-boot();
+
+var setup = function(){
+	var namein = prompt("What should the duck call you?");
+	console.log("Prompted");
+
+	localStorage.setItem("name", namein);
+	localStorage.setItem("firstboot", false);
+	console.log("Set locals");
+	
+	console.log("Reloading");
+	location.reload();
+}
+
+var name = localStorage.getItem("name");
+
+window.onload = function(){
+	boot();
+}
