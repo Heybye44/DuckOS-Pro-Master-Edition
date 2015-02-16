@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DuckOS</title>
+		<link rel = "stylesheet" type = "text/css" href = "css/bootstrap.min.css">
+		<link rel = "stylesheet" type = "text/css" href = "css/styles.css">
+	</head>
+	<body>
+		<script src = "os/keyboard.js"></script>
+		<script src = "os/main.js"></script>
+		<script src = "os/bar.js"></script>
+		<script src = "os/misc.js"></script>
+		
+		<div id = "dash">
+			<div class = "navbar navbar-inverse navbar-fixed">
+				<div class = "container">
+					<a class = "navbar-brand titleword" onclick = "goHome();">
+						Settings
+					</a>
+					
+					<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+					</button>
+				
+					<div class = "collapse navbar-collapse navHeaderCollapse">
+						<ul class = "nav navbar-nav navbar-right">
+							<li onclick = "goHome();"><a><span class = "glyphicon glyphicon-home"></span></a></li>
+							<li onclick = "goBack();"><a><span class = "glyphicon glythicon-back-arrow"></span></a><li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "app">
+			<h1>Settings</h1>
+			<button class = "btn btn-primary" onclick = "setup();">Run Setup</button>
+
+		</div>
+	<body>
+</html>
