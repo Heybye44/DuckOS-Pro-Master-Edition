@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DuckOS - Minecraft</title>
+		<link rel = "stylesheet" type = "text/css" href = "css/bootstrap.min.css">
+		<link rel = "stylesheet" type = "text/css" href = "css/styles.css">
+	</head>
+	<body>
+		<script src = "os/keyboard.js"></script>
+		<script src = "os/main.js"></script>
+		<script src = "os/bar.js"></script>
+		<script src = "os/misc.js"></script>
+		
+		<div id = "dash">
+			<div class = "navbar navbar-inverse navbar-fixed">
+				<div class = "container">
+					<a class = "navbar-brand titleword" onclick = "goHome();">
+						Minecraft
+					</a>
+					
+					<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+					</button>
+				
+					<div class = "collapse navbar-collapse navHeaderCollapse">
+						<ul class = "nav navbar-nav navbar-center">
+							<li><a href = "com_settings_ptx.html"><span class = "glyphicon glyphicon-cog"></span></a></li>
+							<li><a onclick = "goHome();"><span class = "glyphicon glyphicon-home"></span></a></li>
+							<li><a onclick = "goBack();"><span class = "glyphicon glyphicon-arrow-right"></span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "app">
+			   <script type="text/javascript">
+function setName()
+ {
+ document.getElementById("intro").innerHTML = 
+    '<div class="info">' +
+ 	'<applet code="net.minecraft.Launcher" archive="https://s3.amazonaws.com/MinecraftDownload/launcher/MinecraftLauncher.jar?v=1326382442000" codebase="/game/" width="854" height="480">' + 
+	'<param name="separate_jvm" value="true"/>' +
+    '<param name="java_arguments" value="-Xmx1024M -Xms1024M -Dsun.java2d.noddraw=true -Dsun.awt.noerasebackground=true -Dsun.java2d.d3d=false -Dsun.java2d.opengl=false -Dsun.java2d.pmoffscreen=false">' +
+    '<param name="latestVersion" value="1326382442000">' +
+    '<param name="downloadTicket" value="0">' +
+    '<param name="sessionId" value="0">' +
+	'<param name="userName" value="' +
+	escape(document.getElementById("inputName").value) +
+	'"> </applet>';
+ }
+</script>
+<center>
+<div id="intro">
+<applet code="net.minecraft.Launcher" archive="https://s3.amazonaws.com/MinecraftDownload/launcher/MinecraftLauncher.jar?v=1326382442000" codebase="/game/" width="1024" height="600">
+        <param name="separate_jvm" value="true">
+        <param name="java_arguments" value="-Xmx256M -Xms256M -Dsun.java2d.noddraw=true -Dsun.awt.noerasebackground=true -Dsun.java2d.d3d=false -Dsun.java2d.opengl=false -Dsun.java2d.pmoffscreen=false">
+        <param name="userName" value="Player">
+        <param name="latestVersion" value="1326382442000">
+        <param name="downloadTicket" value="0">
+        <param name="sessionId" value="0">
+    </applet>
+</div>
+<input id="inputName" type="text" value="Username" maxlength="16"/>
+<input type="button" onclick="setName()" value="Set Username"/></center>
+		</div>
+	<body>
+</html>
