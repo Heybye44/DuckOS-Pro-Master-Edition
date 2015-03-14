@@ -4,8 +4,12 @@ var boot = function() {
 		console.log("setup needed");
 		setup();
 		return 0;
+	}else if(localStorage.getItem("firstboot") == "false"){
+		document.getElementById("namecard").innerHTML = "Welcome, " + name;
+	}else if(localStorage == null){
+		alert("Your broswer does not support key features of DuckOS. Try DuckOS in Chrome or Firefox.");
 	}else{
-		 document.getElementById("namecard").innerHTML = "Welcome, " + name;
+		alert("Our inner bird has no idea what happened. lol");
 	}
 	 
 }
