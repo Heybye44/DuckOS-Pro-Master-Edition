@@ -4,6 +4,11 @@
 		<title>DuckOS</title>
 		<link rel = "stylesheet" type = "text/css" href = "css/bootstrap.min.css">
 		<link rel = "stylesheet" type = "text/css" href = "css/styles.css">
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		
 	</head>
 	<body>
 		<!-- 
@@ -11,15 +16,18 @@
 		 __(o)<
 		 \___) 	 
 		 -->
+		<!-- <script src = "os/pkgmgr.js"></script> -->
 		<script src = "os/keyboard.js"></script>
-		<script src = "os/boot.js"></script>
-		<script src = "os/misc.js"></script>
 		
-		<div id = "dash">
-			<div class = "navbar navbar-inverse navbar-fixed">
+
+		<!-- <script src = "os/misc.js"></script> -->
+		
+		<div>
+			<div class = "navbar navbar-inverse navbar-fixed dash">
 				<div class = "container">
+					<img class = "pull-left image-circle img-responsive" align = "center" src = "images/icon-310x310.png"></img>
 					<a class = "navbar-brand titleword" id = "namecard" onclick = "goHome();">
-						Home
+						Home				
 					</a>
 					
 					<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
@@ -43,7 +51,7 @@
 		<script src = "os/bar.js"></script>
 		<div class = "app">
 			<h3 class = "titleword">Apps</h3>
-			<ol>
+			<ul id = "applist">
 				<li><a href = "com_youtube_google.html">Youtube</a></li>
 				<li><a href = "com_roblox_robloxcorp.html">ROBLOX</a></li>
 				<li><a href = "com_soundcloud_soundcloud.html">SoundCloud</a></li>
@@ -53,7 +61,10 @@
 				<li><a href = "com_netflix_netflix.html">Netflix</a></li>
 				<li><a href = "com_gmail_google.html">Gmail</a></li>
 				<li><a href = "com_mojang_minecraft.html">Minecraft</a></li>
-			</ol>
+				<li><a href = "com_doge2048.html">Doge2048</a></li>
+			</ul>
 		</div>
+		
+				<script src = "os/boot.js"></script>
 	<body>
 </html>

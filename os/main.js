@@ -1,3 +1,3 @@
-var page = document.getElementsByTagName("body")
-
-//page.requestFullscreen();
+window.onload = function(){
+	document.body.style.backgroundImage = localStorage.getItem("wall");
+}

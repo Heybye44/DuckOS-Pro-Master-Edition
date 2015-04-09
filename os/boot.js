@@ -11,15 +11,25 @@ var boot = function() {
 	}else{
 		alert("Our inner bird has no idea what happened. lol");
 	}
-	 
+	
+	//pkgm.load();
 }
 
 
 var setup = function(){
-	var namein = prompt("What should the duck call you?");
-	console.log("Prompted");
-
+	var namein = prompt("What should teh epic duck call you?");
+	console.log("Prompted for name");
+	
+	var wallimgIn = prompt("What is the location of the image file you want to be your desktop?");
+	console.log("Prompted for image");
+	
+	
 	localStorage.setItem("name", namein);
+	console.log("Set locals");
+	
+	localStorage.setItem("wall", "url(" + wallimgIn + ")");
+	console.log("Set locals: " + localStorage.getItem("wall"));
+	
 	localStorage.setItem("firstboot", false);
 	console.log("Set locals");
 	
@@ -29,6 +39,4 @@ var setup = function(){
 
 var name = localStorage.getItem("name");
 
-window.onload = function(){
-	boot();
-}
+boot();
