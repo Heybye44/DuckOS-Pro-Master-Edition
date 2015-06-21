@@ -17,6 +17,9 @@ var boot = function() {
 
 
 var setup = function(){
+	localStorage.setItem("firstboot", true);
+	console.log("FirstBoot Reset");
+	
 	var namein = prompt("What should teh epic duck call you?");
 	console.log("Prompted for name");
 	

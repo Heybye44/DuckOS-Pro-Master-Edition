@@ -1,5 +1,5 @@
 .dash{
-	background:rgba(1, 2, 3, 0.8)
+	background:rgba(1, 2, 3, 0.8);
 }
 
 .titleword{
@@ -20,8 +20,9 @@ body{
 	color: #D5D5D5;
 	font-size: 20px;
 	position: center;
-	-moz-box-shadow: 0 0 15px 1px #000000;
-	-webkit-box-shadow: 0 0 15px 1px #000000;
+	-webkit-box-shadow: 0px 0px 125px 2px rgba(0,0,0,0.49);
+	-moz-box-shadow: 0px 0px 125px 2px rgba(0,0,0,0.49);
+	box-shadow: 0px 0px 125px 2px rgba(0,0,0,0.49);
 	height: 100%;
 	width: 100%;
  	padding-left: 2%;
@@ -30,10 +31,48 @@ body{
 	padding-bottom: 2%;
 }
 
-.app a:link, .applist:link, .app a:visited, .applist:visited{
+.app a:link, .applist:link, .app a:visited, .applist:visited, #lowdash{
 	color: #FFFFFF;
 }
 
 .app a:hover, .applist:hover{
 	color: #B4B4B4;
+}
+
+#lowdash{
+	background:rgba(1, 2, 3, 0.6);
+	-webkit-box-shadow: 0px 0px 125px 2px rgba(0,0,0,0.49);
+	-moz-box-shadow: 0px 0px 125px 2px rgba(0,0,0,0.49);
+	box-shadow: 0px 0px 125px 2px rgba(0,0,0,0.49);
+	position: fixed;
+	bottom: 0;
+	left: 2%;
+	right: 2%;
+	width: 96%;
+	height: 2.5em;
+	margin: 0.3;
+
+}
+
+#lowdash ul{
+	list-style-type: none;
+	left: 0;
+	width: 100%;
+	padding: 0;
+}
+
+#lowdash ul li{
+	display:inline-block;
+	font-size: 1.7em;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 0.5%;
+	text-anchor: middle;
+
+}
+
+.namecard{
+	color: #eeeeee;
+	margin-left: 30px;
+	font-size: 4em;
 }
